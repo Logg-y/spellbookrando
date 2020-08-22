@@ -63,7 +63,7 @@ def randomiser(**options):
 		seed = int(options["seed"])
 		random.seed(seed)
 	else:
-		seed = random.randint(-214783647, 2147483647)
+		seed = str(random.randint(-214783647, 2147483647))
 		random.seed(seed)
 	name = options.get("name", None)
 	if name is None: name = str(seed).replace("-", "m")
